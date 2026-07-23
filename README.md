@@ -77,7 +77,7 @@ Vlan 30
 name Server VLAN
 ```
 
-**#For security, we will enable the secret password. This forces someone logging in on the router directly to enter an encrypted password if they want to raise their privilege level. We will also put a password on the ssh lines so that anyone who comes in via ssh will have to enter a password. SSHv2 will be enabled since that is more secure. We will enable the password encryption service so that the passwords are encrypted for anyone on the router who attempts to view them. All unused ports will be shut down to minimize the attack surface. Lastly, we will enable port security on our active access ports and instruct them to only allow the MAC address of the directly connected endpoints to connect.**
+
 
 ```ios
 enable secret ########

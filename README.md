@@ -12,6 +12,8 @@ Here is an architecture with three VLANs. VLANs 10 and 20 are dedicated to compu
 ```ios
 Hostname DanAccess1
 Vlan 10
+name Sales VLAN
+Vlan 20
 name Engineering VLAN
 Vlan 30
 name Server VLAN

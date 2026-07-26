@@ -210,6 +210,8 @@ Switchport trunk allowed vlan 10,20,30
 ```ios
 Ip access-list extended SERVERACL
 Permit tcp any host 192.168.30.10 eq 80
+Permit tcp any host 192.168.30.10 eq 443
+Permit tcp any host 192.168.30.20 eq 21
 Permit tcp any host 192.168.30.20 eq 22
 Permit tcp any host 192.168.30.30 eq 25
 Permit tcp any host 192.168.30.30 eq 993
@@ -269,6 +271,10 @@ username admin privilege 15 secret ##########
 Ip access-list extended SERVERACL
 Permit tcp any host 192.168.30.10 eq 80
 Permit tcp any host 192.168.30.10 eq 443
+Permit tcp any host 192.168.30.20 eq 21
+Permit tcp any host 192.168.30.20 eq 22
+Permit tcp any host 192.168.30.30 eq 25
+Permit tcp any host 192.168.30.30 eq 993
 
 Router ospf 1
 Router-id 2.2.2.2

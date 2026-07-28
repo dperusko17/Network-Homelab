@@ -240,6 +240,7 @@ Ip address 10.1.1.1 255.255.255.252
 ```ios
 Router ospf 1
 Router-id 1.1.1.1
+Network 192.168.10.0 0.0.0.255 area 0
 Network 192.168.20.0 0.0.0.255 area 0
 Network 192.168.30.0 0.0.0.255 area 0
 Network 10.1.1.0 0.0.0.3 area 0
@@ -278,6 +279,7 @@ Permit tcp any host 192.168.30.30 eq 993
 
 Router ospf 1
 Router-id 2.2.2.2
+Network 192.168.10.0 0.0.0.255 area 0
 Network 192.168.20.0 0.0.0.255 area 0
 Network 192.168.30.0 0.0.0.255 area 0
 Network 10.2.2.0 0.0.0.3 area 0

@@ -220,11 +220,23 @@ Permit tcp any host 192.168.30.30 eq 993
 **#We are going to set up HSRP, which is a routing protocol that allows for redundancy. It creates a virtual IP that at least two routers use as their default gateway. If one of the routers goes down, the other will become the active router. Here we designate both the physical address on the link and also the virtual address that will be used as the default gateway by the PCs. Since there are three VLANs, we need to use three different standby groups with three virtual IP default gateways.**
 
 ```ios
-Interface vlan10
-Ip address 192.168.10.2 255.255.255.0
-Standby 30 ip 192.168.30.1
-Standby 30 priority 110
-Standby 30 preempt
+interface Vlan10
+ ip address 192.168.10.2 255.255.255.0
+ standby 10 ip 192.168.10.1
+ standby 10 priority 110
+ standby 10 preempt
+
+interface Vlan20
+ ip address 192.168.20.2 255.255.255.0
+ standby 20 ip 192.168.20.1
+ standby 20 priority 110
+ standby 20 preempt
+
+interface Vlan30
+ ip address 192.168.30.2 255.255.255.0
+ standby 30 ip 192.168.30.1
+ standby 30 priority 110
+ standby 30 preempt
 ```
 
 **#Below we will define the link between the Core1 Switch and the EdgeRouter1. We will need to disable switching on that port to route via IP.**

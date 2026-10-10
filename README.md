@@ -3,7 +3,7 @@ A homelab created to emulate a possible scenario when setting up a network.
 
 Here is an architecture with three VLANs. VLANs 10 and 20 are dedicated to computers in the Sales and Engineering departments. VLAN 30 is for the Server farm. These computers and Servers are connected to three access switches, which then connect to two switches that also connect to two routers.
 
-<img width="1071" height="1102" alt="Untitled Diagram drawio" src="https://github.com/user-attachments/assets/079eae03-0f24-40f1-a1cf-5c586a6ad210" />
+<img width="1071" height="1102" alt="NT drawio" src="https://github.com/user-attachments/assets/f9406486-81de-49fa-b28c-c8405c8db7ac" />
 
 ## Access Switches
 
